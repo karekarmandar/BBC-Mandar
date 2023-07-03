@@ -1,0 +1,360 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User setup the API base url",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 317000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User configure the base URL",
+            "match": {
+              "location": "StepDefinitions.AutomationStepDefinition.user_configure_the_base_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-06-30T12:12:29.442Z",
+        "line": 9,
+        "name": "User execute the ottplatform media API and verify status code and time",
+        "description": "",
+        "id": "as-a-user-we-are-executing-ottplatform-media-api;user-execute-the-ottplatform-media-api-and-verify-status-code-and-time",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3592000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I Execute the GET method",
+            "match": {
+              "location": "StepDefinitions.AutomationStepDefinition.i_execute_the_get_method()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I Verify status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinitions.AutomationStepDefinition.i_verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected response time was not a value less than \u003c3000L\u003e milliseconds, was 3129 milliseconds (3129 milliseconds).\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.time(ResponseSpecificationImpl.groovy:127)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:409)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:405)\r\n\tat StepDefinitions.AutomationStepDefinition.i_verify_response_time_is_below_milisecond(AutomationStepDefinition.java:51)\r\n\tat ✽.I Verify response time is below 3000 milisecond(file:///C:/Users/Imran/eclipse-workspace/API_Automation/src/test/java/features/AutomationFeature.feature:12)\r\n",
+              "duration": 74000000,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "I Verify response time is below 3000 milisecond",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3000",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinitions.AutomationStepDefinition.i_verify_response_time_is_below_milisecond(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Scenario1"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User setup the API base url",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User configure the base URL",
+            "match": {
+              "location": "StepDefinitions.AutomationStepDefinition.user_configure_the_base_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-06-30T12:12:33.517Z",
+        "line": 15,
+        "name": "User execute the ottplatform media API, verify ID field is never null or empty and segment_type is music",
+        "description": "",
+        "id": "as-a-user-we-are-executing-ottplatform-media-api;user-execute-the-ottplatform-media-api--verify-id-field-is-never-null-or-empty-and-segment-type-is-music",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1946000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I Execute the GET method",
+            "match": {
+              "location": "StepDefinitions.AutomationStepDefinition.i_execute_the_get_method()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 699000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I Verify ID field is never null or empty",
+            "match": {
+              "location": "StepDefinitions.AutomationStepDefinition.i_verify_id_field_is_never_null_or_empty()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I Verify segment_type field is \"music\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"music\"",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinitions.AutomationStepDefinition.i_verify_segment_type_field_is(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Scenario2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User setup the API base url",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User configure the base URL",
+            "match": {
+              "location": "StepDefinitions.AutomationStepDefinition.user_configure_the_base_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-06-30T12:12:36.197Z",
+        "line": 21,
+        "name": "User execute the ottplatform media API, verify primary field in title list is never null or empty",
+        "description": "",
+        "id": "as-a-user-we-are-executing-ottplatform-media-api;user-execute-the-ottplatform-media-api--verify-primary-field-in-title-list-is-never-null-or-empty",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2061000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I Execute the GET method",
+            "match": {
+              "location": "StepDefinitions.AutomationStepDefinition.i_execute_the_get_method()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I Verify primary field is never null or empty",
+            "match": {
+              "location": "StepDefinitions.AutomationStepDefinition.i_verify_primary_field_is_never_null_or_empty()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Scenario3"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User setup the API base url",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User configure the base URL",
+            "match": {
+              "location": "StepDefinitions.AutomationStepDefinition.user_configure_the_base_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-06-30T12:12:38.285Z",
+        "line": 26,
+        "name": "User execute the ottplatform media API, verify only one now_playing field in offset is true",
+        "description": "",
+        "id": "as-a-user-we-are-executing-ottplatform-media-api;user-execute-the-ottplatform-media-api--verify-only-one-now-playing-field-in-offset-is-true",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2446000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I Execute the GET method",
+            "match": {
+              "location": "StepDefinitions.AutomationStepDefinition.i_execute_the_get_method()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I Verify only one now_playing is true",
+            "match": {
+              "location": "StepDefinitions.AutomationStepDefinition.i_verify_only_one_now_playing_is_true()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Scenario4"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User setup the API base url",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User configure the base URL",
+            "match": {
+              "location": "StepDefinitions.AutomationStepDefinition.user_configure_the_base_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-06-30T12:12:40.770Z",
+        "line": 31,
+        "name": "User execute the ottplatform media API, verify date value in headers",
+        "description": "",
+        "id": "as-a-user-we-are-executing-ottplatform-media-api;user-execute-the-ottplatform-media-api--verify-date-value-in-headers",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2041000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I Execute the GET method",
+            "match": {
+              "location": "StepDefinitions.AutomationStepDefinition.i_execute_the_get_method()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I Verify Date value in headers",
+            "match": {
+              "location": "StepDefinitions.AutomationStepDefinition.i_verify_date_value_in_headers()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Scenario5"
+          }
+        ]
+      }
+    ],
+    "name": "As a User we are executing ottplatform media API",
+    "description": "  and verify the different response data",
+    "id": "as-a-user-we-are-executing-ottplatform-media-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/AutomationFeature.feature",
+    "tags": []
+  }
+]
